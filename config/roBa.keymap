@@ -89,21 +89,21 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        SYMBOLS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH             &trans
+&kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans      &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &trans
+&kp SQT    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE        &trans
+&trans     &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                                     &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp F7  &kp F8  &kp F9  &kp F10                            &kp CARET        &kp N7        &kp N8        &kp N9        &trans
-&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11  &trans         &kp EQUAL  &kp EXCLAMATION  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &kp EQUAL      &trans     &kp PERIOD       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans          &trans  &trans  &trans  &trans   &trans         &trans     &trans                                                     &trans
+&trans          &kp F7  &kp F8  &kp F9  &kp F10                         &trans      &kp N7        &kp N8        &kp N9        &trans
+&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp EQUAL  &trans      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans     &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans          &trans  &trans  &trans  &trans   &trans      &trans     &trans                                                &trans
             >;
         };
 
